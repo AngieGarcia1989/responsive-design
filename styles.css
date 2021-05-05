@@ -473,3 +473,64 @@ header img {
     box-shadow: 0 4px 8px rgba(89,73,30,0.16);
 
 }
+.plans-container--card .recommended{
+    position: absolute;
+    width:110px;
+    height: 31px;
+    padding: 6px;
+    top:-15px;
+    left:calc(50% - 55px);
+    font-weight:bold;
+    background-color: var(--bicoin-orange);
+    border-radius:8px;
+    color:var(--just-white)
+}
+.plan-info-container .plan-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:black;
+}
+.plan-info-container .plan-card--price{
+    position: relative;
+    padding:5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: black;
+}
+
+.plan-card--price span{
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 300;
+    left: 60px;
+    top: -10px;
+}
+.plan-card--saving{
+    font-size:1.2rem;
+    color:#757575;
+    margin-bottom: 20px;
+}
+.plan-card--ca button{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bicoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight:bold;
+    line-height:1.8rem;
+    color:var(--black);
+    
+}
+.plan-card--ca span{
+    display:inline-block;
+    width: 20px;
+    height:20px;
+    background-image: url(/assets/icons/orange-right-arrow.svg);
+    vertical-align: text-bottom ;
+}

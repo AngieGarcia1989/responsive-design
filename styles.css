@@ -98,6 +98,17 @@ header img {
     height: auto;
     background-color: #faf8f7;
 }
+.main-tables-container{
+    display:flex;
+   height:356px;
+   overflow-x: scroll;
+   overscroll-behavior-x: contain;
+   scroll-snap-type: x proximity;
+   
+ }
+ ::-webkit-scrollbar {display: none;}
+ 
+
 .main-exchange-container{
     width: 100%;
     height: auto;
@@ -140,7 +151,7 @@ header img {
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0  10px;
     font-family: "Inter",sans-serif;
     
    
@@ -462,11 +473,13 @@ header img {
 }
 .plans-container--slider{
    display:flex;
-   height:316px;
+   height:346px;
    overflow-x: scroll;
    overscroll-behavior-x: contain;
    scroll-snap-type: x proximity;
+   
 }
+::-webkit-scrollbar {display: none;}
 .plans-container--card{
     position:relative;
     scroll-snap-align: center;

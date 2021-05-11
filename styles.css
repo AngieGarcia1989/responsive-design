@@ -96,7 +96,7 @@ header img {
 .main{
     width: 100%;
     height: auto;
-    background-color: var(--soft-blue);
+    background-color: #faf8f7;
 }
 .main-exchange-container{
     width: 100%;
@@ -460,13 +460,21 @@ header img {
     line-height: 1.8rem;
     color: #757575
 }
+.plans-container--slider{
+   display:flex;
+   height:316px;
+   overflow-x: scroll;
+   overscroll-behavior-x: contain;
+   scroll-snap-type: x proximity;
+}
 .plans-container--card{
     position:relative;
+    scroll-snap-align: center;
     width:70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
-    height:250px;
-    margin: 50px auto 0;
+    height:300px;
+    margin: 50px 5px 0;
     padding:0 15px;
     background-color:var(--just-white);
     border-radius:15px;
@@ -502,21 +510,23 @@ header img {
 }
 
 .plan-card--price span{
-    position: absolute;
+    position: relative;
     font-size: 1.2rem;
     font-weight: 300;
-    left: 60px;
+    left: -30px;
     top: -10px;
 }
 .plan-card--saving{
     font-size:1.2rem;
     color:#757575;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
+    margin-top: -10px;
 }
-.plan-card--ca button{
+.plan-card--ca {
     width: 150px;
-    height: 48px;
-    margin-top: 20px;
+    height: 58px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: #faf8f7;
     border: 2px solid var(--bicoin-orange);
     border-radius: 4px;
@@ -533,4 +543,29 @@ header img {
     height:20px;
     background-image: url(/assets/icons/orange-right-arrow.svg);
     vertical-align: text-bottom ;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bicoin-orange);
+}
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
 }
